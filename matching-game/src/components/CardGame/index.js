@@ -1,7 +1,9 @@
+import "./style.css";
+
 function CardGame() {
   return `
-    <article>
-      OI
+    <article class="card-game">
+      <img src="./images/alura.png" alt="Logo da alura">
     </article>
   `;
 }
