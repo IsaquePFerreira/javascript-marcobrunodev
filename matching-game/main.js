@@ -5,7 +5,7 @@ import "./src/styles/elements/base.css";
 
 import CardFrontBack from "./src/components/CardFrontBack";
 import PlayerName from "./src/components/PlayerName";
-import BoardGame from "./src/objects/CardBoard";
+import BoardGame from "./src/objects/BoardGame";
 
 const $root = document.querySelector("#root");
 const $htmlCardFrontBack = CardFrontBack();
