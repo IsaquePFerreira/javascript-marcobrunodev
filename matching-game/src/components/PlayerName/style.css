@@ -1,7 +1,4 @@
 .player-name {
-  width: 70px;
-  height: 10px;
-  padding: 10px;
+  font-size: 1rem;
   color: var(--color-floral-white);
-  font-family: var(--first-font);
 }
