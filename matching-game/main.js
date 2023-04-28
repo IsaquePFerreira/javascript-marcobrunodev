@@ -3,7 +3,7 @@ import "./src/styles/settings/fonts.css";
 import "./src/styles/generic/reset.css";
 import "./src/styles/elements/base.css";
 
-import PlayerName from "./src/components/PlayerName";
+import ScoreBoard from "./src/objects/ScoreBoard";
 import BoardGame from "./src/objects/BoardGame";
 
 const $root = document.querySelector("#root");
@@ -11,8 +11,7 @@ const $root = document.querySelector("#root");
 $root.insertAdjacentHTML(
   "beforeend",
   `
-  ${PlayerName("Player1")}
-  ${PlayerName("Player2")}
+  ${ScoreBoard()}
   ${BoardGame(5)}
   `
 );
