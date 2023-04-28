@@ -1,9 +1,8 @@
 import "./style.css";
 
-function PlayerName() {
+function PlayerName(name) {
   return `
-    <h2 class="player-name">Player1</h2>
-    <h2 class="player-name">Player2</h2>
+    <p class="player-name">${name}</p>
   `;
 }
 
