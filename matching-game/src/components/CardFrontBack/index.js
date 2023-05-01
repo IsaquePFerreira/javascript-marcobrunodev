@@ -1,9 +1,13 @@
-import "./style.css";
+//import "./style.css";
+
+import CardGame from "../CardGame";
 
 function CardFrontBack() {
+
   return `
     <article class="card-front-back">
-      <img src="./images/logo-javascript.png" alt="Logo JavaScript em pixelart">
+      ${CardGame()}
+      ${CardGame()}
     </article>
   `;
 }
