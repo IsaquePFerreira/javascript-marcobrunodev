@@ -1,8 +1,8 @@
 import "./style.css";
 
-function VsPlayer() {
+function VsPlayer(content = "Vs") {
   return `
-    <p class="vs-player">Vs</p>
+    <p class="vs-player">${content}</p>
   `;
 }
 
