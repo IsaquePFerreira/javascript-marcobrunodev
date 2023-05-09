@@ -1,8 +1,11 @@
 import "./style.css";
 
-function ArrowDown() {
+function ArrowDown(currentPlayer = 1) {
   return `
-    <img src="images/arrow-down.png" alt="Ícone de seta apontando para baixo">
+    <img class="arrow-down" 
+      data-currentPlayer="${currentPlayer}"
+      src="images/arrow-down.png"
+      alt="Ícone de seta apontando para baixo">
   `;
 }
 
