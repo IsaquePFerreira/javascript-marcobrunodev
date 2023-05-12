@@ -3,11 +3,10 @@ import "./style.css";
 import CardFrontBack from "../../components/CardFrontBack";
 import cards from "./data";
 
-function BoardGame(amountCards) {
+function BoardGame() {
   const flipAndHideCards = ($cardsActive) => {
     $cardsActive.forEach((card) => card.classList.remove("-active"));
   }
-
   const swapPlayer = () => {
     const $arrowDown = document.querySelector(".arrow-down");
     const currentPlayer = $arrowDown.getAttribute("data-currentplayer");
@@ -22,6 +21,9 @@ function BoardGame(amountCards) {
         flipAndHideCards($cardsActive);
         swapPlayer();
       }, 1000);
+    }
+    if ($cardsActive.length > 2) {
+      flipAndHideCards($cardsActive);
     }
   }
 
